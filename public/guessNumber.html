@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <title>TEBAK ANGKA 2.0</title>
+</head>
+
+<body class="font-montserrat bg-gray-50 ">
+
+
+
+
+    <header class="p-5 mx-auto text-center text-slate-700">
+
+        <h1 class="text-2xl font-bold text-center">TEBAK ANGKA <span class="text-3xl text-teal-500">2</span>
+        </h1>
+
+        <h2 class="mt-4 text-lg font-semibold">Selamat Datang di Game Tebak Angka!
+        </h2>
+
+        <p class="mt-2 mb-1 font-normal ">Pilih angka dengan mengikuti <span class="font-semibold text-rose-600">kata
+                hati</span> kamu sendiri untuk memenangkan permainan ini ^^</p>
+
+        <p class="font-medium">Kamu punya <span class="font-semibold">3x</span> kesempatan bermain lhoo.</p>
+
+
+
+    </header>
+
+    <section>
+
+        <div id="main" class="container max-w-sm p-16 m-4 mx-auto bg-white border rounded-md shadow-sm">
+            <h4 class="items-center text-lg font-bold text-center text-slate-700">Tekan tombol ini manieezz</h4>
+
+            <button type="button" id="showModal"
+                class="block p-2 mx-auto mt-4 font-semibold shadow-md bg-rose-500 text-slate-50 rounded-2xl hover:bg-rose-400"
+                data-game-toggle="game">Touch Me
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <section id="modal"
+        class="h-full w-full bg-black bg-opacity-50 fixed flex justify-center items-center content-center left-0 top-0 hidden">
+
+        <div
+            class="container max-w-sm p-6 mx-auto my-2 text-center bg-white border shadow-lg rounded-xl text-slate-800 md:max-w-md">
+
+            <div class="p-2 text-base font-normal md:text-lg">Guess the number 1-10</div>
+
+            <div id="alert" class="mb-4 text-red-600"></div>
+
+
+
+            <div class="mb-4 text-lg font-semibold md:text-xl">Masukkan angka tebakanmu</div>
+            <input type="text" name="guess" id="input"
+                class="w-20 p-2 m-2 text-2xl font-bold text-center border rounded-md shadow-md cursor-pointer focus:outline-none focus:ring focus:ring-sky-400 text-slate-700 border-slate-200 md:m-2">
+
+            <button type="submit"
+                class="p-2 mt-1 bg-sky-400 text-slate-50 rounded-lg shadow-md flex mx-auto font-semibold hover:bg-sky-300">Submit</button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <div class="my-6 text-2xl font-bold text-center text-slate-700">GOOD LUCK !💋 </div>
+
+
+
+    <footer class="p-4 font-semibold text-center bg-slate-700 text-slate-200">Made with❤️by <a
+            href="https://www.instagram.com/ahmdzakiiiy/">ahmad
+            <span class="text-teal-500">zaki</span></a></footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
