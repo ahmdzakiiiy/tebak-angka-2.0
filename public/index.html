@@ -10,6 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap"
         rel="stylesheet">
 
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+
+
     <title>TEBAK ANGKA 2.0</title>
 </head>
 
@@ -37,7 +46,7 @@
 
     <section>
 
-        <div id="main" class="container max-w-sm p-16 m-4 mx-auto bg-white border rounded-md shadow-sm">
+        <div id="main " class="container max-w-sm p-16 m-4 mx-auto bg-white border rounded-md shadow-sm">
             <h4 class="items-center text-lg font-bold text-center text-slate-700">Tekan tombol ini manieezz</h4>
 
             <button type="button" id="showModal"
@@ -50,34 +59,33 @@
     </section>
 
 
+    <section id="game" class="hidden">
+
+
+        <section id="modal"
+            class="h-full w-full bg-black bg-opacity-50 fixed flex justify-center items-center content-center left-0 top-0">
+
+            <div
+                class="container max-w-sm p-2 text-center bg-white border shadow-lg rounded-xl text-slate-800 md:max-w-xl md:p-8 lg:max-w-xl lg:p-12">
+
+                <div class="p-2 text-base font-normal md:text-lg">Guess the number 1-10</div>
+
+                <div id="message" class="mb-4 text-red-600"></div>
 
 
 
+                <div class="mb-4 text-lg font-semibold md:text-xl">Masukkan angka tebakanmu</div>
+                <input name="input" id="input" type="number" min="1" step="1" max="10"
+                    class="w-20 p-2 m-2 text-2xl font-bold text-center border rounded-md shadow-md cursor-pointer focus:outline-none focus:ring focus:ring-sky-400 text-slate-700 border-slate-200 md:m-2">
+                <br>
+
+                <button onclick="play()" id="btn" type="submit"
+                    class="p-2 my-1 bg-sky-400 text-slate-50 rounded-lg shadow-md flex mx-auto font-semibold hover:bg-sky-300">Submit</button>
 
 
+            </div>
 
-    <section id="modal"
-        class="h-full w-full bg-black bg-opacity-50 fixed flex justify-center items-center content-center left-0 top-0 hidden">
-
-        <div
-            class="container max-w-sm p-6 mx-auto my-2 text-center bg-white border shadow-lg rounded-xl text-slate-800 md:max-w-md">
-
-            <div class="p-2 text-base font-normal md:text-lg">Guess the number 1-10</div>
-
-            <div id="alert" class="mb-4 text-red-600"></div>
-
-
-
-            <div class="mb-4 text-lg font-semibold md:text-xl">Masukkan angka tebakanmu</div>
-            <input type="text" name="guess" id="input"
-                class="w-20 p-2 m-2 text-2xl font-bold text-center border rounded-md shadow-md cursor-pointer focus:outline-none focus:ring focus:ring-sky-400 text-slate-700 border-slate-200 md:m-2">
-
-            <button type="submit"
-                class="p-2 mt-1 bg-sky-400 text-slate-50 rounded-lg shadow-md flex mx-auto font-semibold hover:bg-sky-300">Submit</button>
-
-
-        </div>
-
+        </section>
     </section>
 
 
@@ -89,6 +97,8 @@
     <footer class="p-4 font-semibold text-center bg-slate-700 text-slate-200">Made with❤️by <a
             href="https://www.instagram.com/ahmdzakiiiy/">ahmad
             <span class="text-teal-500">zaki</span></a></footer>
+
+
 
 
 
